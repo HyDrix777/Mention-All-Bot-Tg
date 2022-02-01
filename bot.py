@@ -17,17 +17,17 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**𝙄𝙢 𝙈𝙚𝙣𝙩𝙞𝙤𝙣𝘼𝙡𝙡 𝘽𝙤𝙩**, 𝙄 𝙘𝙖𝙣 𝙢𝙚𝙣𝙩𝙞𝙤𝙣 𝙖𝙡𝙢𝙤𝙨𝙩 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙤𝙧 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 👻\nClick **/help** 𝙛𝙤𝙧 𝙢𝙤𝙧𝙚 𝙞𝙣𝙛𝙤𝙢𝙖𝙩𝙞𝙤𝙣.",
+  await event.reply("**ɪᴍ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ʙᴏᴛ**,\nɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ⚡\nCʟɪᴄᴋ /help ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.",
                     buttons=(
-                      [Button.url('📣 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', 'https://t.me/Tg_Galaxy'),
-                      Button.url('➕𝗔𝗱𝗱 𝗠𝗲 𝗚𝗿𝗼𝘂𝗽➕', 'http://t.me/Mentionallbot_Xbot?startgroup=true')]
+                      [Button.url('👥 ᴍʏ ɢʀᴏᴜᴘ', 'https://t.me/Music_Galaxy_Dl'),
+                      Button.url('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕', 'http://t.me/Mentionalltgtbot?startgroup=true')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mall\n__You can use this command with text what you want to mention others.__\n`Example: /mall Good Night 🌃!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nBot Cloned Owner @HydraLivegrambot"
-  await event.reply(helptext,
+  helptext = "**ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴍᴇɴᴛɪᴏɴᴀʟʟʙᴏᴛ**\n\nCᴏᴍᴍᴀɴᴅ: /all\nYᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n**Example:** `/all Good Night 🌃!`\nYᴏᴜ ᴄᴀɴ ᴅᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ.\nBᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ.\n\n🌟 ᴍʏ ᴏᴡɴᴇʀ @HydraLivegrambot"
+  await event.reply(helptext, 
                     buttons=(
                       [Button.url('📣 Channel', 'https://t.me/Tg_Galaxy'),
                       Button.url('👀 Source', 'https://t.me/Tg_Galaxy')]
@@ -35,16 +35,16 @@ async def help(event):
                     link_preview=False
                    )
   
-@client.on(events.NewMessage(pattern="^/mall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def mentionall(event):
   if event.is_private:
-    return await event.respond("__This command can be use in groups and channels!__")
+    return await event.respond("Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇ ɪɴ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟs!")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("__Only admins can mention all!__")
+    return await event.respond("Oɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ! 😁")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -53,11 +53,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("__I can't mention members for older messages! (messages which sended before i added to group)__")
+        return await event.respond("I ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ғᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (messages which sended before i added to group)")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("__Give me one argument!__")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others!__")
+    return await event.respond("Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!")
   
   if mode == "text_on_cmd":
     usrnum = 0
