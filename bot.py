@@ -29,8 +29,8 @@ async def help(event):
   helptext = "**ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴍᴇɴᴛɪᴏɴᴀʟʟʙᴏᴛ**\n\nCᴏᴍᴍᴀɴᴅ: /all\nYᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n**Example:** `/all Good Night 🌃!`\nYᴏᴜ ᴄᴀɴ ᴅᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ.\nBᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ.\n\n🌟 ᴍʏ ᴏᴡɴᴇʀ @HydraLivegrambot"
   await event.reply(helptext, 
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/Tg_Galaxy'),
-                      Button.url('👀 Source', 'https://t.me/Tg_Galaxy')]
+                      [Button.url('📢 Channel', 'https://t.me/Tg_Galaxy'),
+                      Button.url('👥 ɢʀᴏᴜᴘ', 'https://t.me/music_Galaxy_dl')]
                     ),
                     link_preview=False
                    )
