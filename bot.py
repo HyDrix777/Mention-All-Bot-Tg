@@ -26,7 +26,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴍᴇɴᴛɪᴏɴᴀʟʟʙᴏᴛ**\n\nCᴏᴍᴍᴀɴᴅ: /all\nYᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n**Example:** `/all Good Night 🌃!`\nYᴏᴜ ᴄᴀɴ ᴅᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ.\nBᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ.\n\n🌟 Bot maintained by: @HydraLivegrambot\nBot Creator: [Click here](https://github.com/anjanamadu)"
+  helptext = "**ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴍᴇɴᴛɪᴏɴᴀʟʟʙᴏᴛ**\n\nCᴏᴍᴍᴀɴᴅ: /all\nYᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n**Example:** `/all Good Night 🌃!`\nYᴏᴜ ᴄᴀɴ ᴅᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ.\nBᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ.\n\n🌟 Bot Maintained by: [HyDrix](t.me/HydraLivegrambot)\n🌟🌟 Bot Creator: [Click here](https://github.com/anjanamadu)"
   await event.reply(helptext, 
                     buttons=(
                       [Button.url('📢 Channel', 'https://t.me/Tg_Galaxy'),
